@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #111827;
+            padding: 60px 20px;
+        }
+
+        .testimonials-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonials-header {
+            margin-bottom: 50px;
+        }
+
+        .testimonials-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 12px;
+        }
+
+        .testimonials-subtitle {
+            font-size: 18px;
+            color: #4b5563;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .testimonial-card {
+            background-color: #ffffff;
+            padding: 10px 0;
+        }
+
+        .rating-img {
+            height: 24px;
+            width: auto;
+            margin-bottom: 24px;
+        }
+
+        .testimonial-quote {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #111827;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 16px;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .author-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 4px;
+        }
+
+        .author-role {
+            font-size: 14px;
+            color: #4b5563;
+        }
+
+        .author-divider {
+            width: 2px;
+            height: 36px;
+            background-color: #84cc16;
+            margin-left: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="testimonials-section">
+        <div class="testimonials-header">
+            <h2 class="testimonials-title">What our Customers Say</h2>
+            <p class="testimonials-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <img src="Stars.png" alt="" class="rating-img">
+                <p class="testimonial-quote">“The Best app I have used to order food in a while, so many options to
+                    choose from too, I would recommend to a freind, No questions asked”</p>
+                <div class="testimonial-author">
+                    <img src="2bf93a71d8003e7c5abaae02be0c524fe88ec378.png" alt="Sumith Shah" class="author-avatar">
+                    <div class="author-info">
+                        <div class="author-details">
+                            <span class="author-name">Sumith Shah</span>
+                            <span class="author-role">Some Dude</span>
+                        </div>
+                        <div class="author-divider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="Stars.png" alt="" class="rating-img">
+                <p class="testimonial-quote">“The ease with which I can just go in and order what i want was amazing, It
+                    has been a very pleasant experience ordering from this app”</p>
+                <div class="testimonial-author">
+                    <img src="317076dfa57d49314359fd7606cce752f3324d5d.png" alt="" class="author-avatar">
+                    <div class="author-info">
+                        <div class="author-details">
+                            <span class="author-name">Sumith Shah</span>
+                            <span class="author-role">Some Dude</span>
+                        </div>
+                        <div class="author-divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

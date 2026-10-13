@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #2c2c2c;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #fafafa;
+            padding: 60px 80px 40px 80px;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+            display: block;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c2c2c;
+            font-size: 16px;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #8bb20c;
+        }
+
+        .subscribe-section {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .subscribe-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2c2c2c;
+        }
+
+        .subscribe-form {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .subscribe-input {
+            width: 280px;
+            padding: 12px 20px;
+            border: 1px solid #ffe885;
+            border-radius: 25px;
+            outline: none;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        .subscribe-input::placeholder {
+            color: #757575;
+        }
+
+        .subscribe-btn {
+            padding: 12px 28px;
+            border: 1px solid #a3c639;
+            background-color: transparent;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #2c2c2c;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            transition: all 0.2s ease;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #a3c639;
+            color: #ffffff;
+        }
+
+        .subscribe-disclaimer {
+            font-size: 13px;
+            color: #2c2c2c;
+        }
+
+        .subscribe-disclaimer a {
+            color: #8bb20c;
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 24px;
+        }
+
+        .legal-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .legal-links a {
+            color: #8bb20c;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+
+        .copyright {
+            font-size: 14px;
+            color: #333333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer>
+        <div class="footer-top">
+            <div class="logo">
+                <img src="Vector.png" alt="">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="subscribe-section">
+                <span class="subscribe-title">Subscribe</span>
+                <form class="subscribe-form" id="newsletterForm">
+                    <input type="email" class="subscribe-input" id="emailInput" placeholder="Enter your email" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+                <p class="subscribe-disclaimer">
+                    By subscribing you agree to with our <a href="#">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <ul class="legal-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Cookies Settings</a></li>
+            </ul>
+            <p class="copyright">2022 FoodSta. All right reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
